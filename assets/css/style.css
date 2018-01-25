@@ -1,0 +1,35 @@
+.title {
+	background: rgb(206,113,56);
+	color: white;
+	margin-bottom: 0;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.instructions {
+	background: rgb(252,230,207);
+	color: rgb(105,167,115);
+	margin-top: 0;
+}
+
+.random-number {
+	background: rgb(70,181,122);
+	color: rgb(107,45,116);
+}
+
+.wins-losses {
+	background: rgb(35,253,253);
+	color: rgb(12,97,104);
+}
+
+.crystals {
+	width: 12%;
+}
+
+.total-score {
+	background: rgb(14,162,151);
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+}
