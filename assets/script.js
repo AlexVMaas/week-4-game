@@ -18,18 +18,21 @@
 
         $(".crystals").on("click", function() {
             var index = parseInt($(this).attr("value"))
-            if (randomNumber === totalScore) {
-                wins++
-                reset()
-                update()
-            } else if (totalScore > randomNumber) {
-                losses++
-                reset ()
-                update ()
-            } else if (totalScore < randomNumber) {
+            if (totalScore < randomNumber) {
                 totalScore += crystalValues[index]
+                update ()  
+                if (randomNumber === totalScore) {
+                    update()
+                    reset()
+                    wins++
+                    alert("You won Megan!!!!")
+                } else if (totalScore > randomNumber) {
+                losses++
                 update ()
-            }
+                reset ()
+                alert ("You lost Megan :( :( :( ")
+                }
+            }   
         })
 
         // if they win (userTotalScore === computerRandomNumber)
